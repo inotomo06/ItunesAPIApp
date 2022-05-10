@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1EB3D228290EBB007798E5 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D128290EBB007798E5 /* BookListView.swift */; };
+		7F1EB3D428291779007798E5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D328291779007798E5 /* SideMenuView.swift */; };
+		7F1EB3D628291796007798E5 /* SideMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D528291796007798E5 /* SideMenuContentView.swift */; };
+		7F1EB3D9282946A8007798E5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D8282946A8007798E5 /* RegistrationView.swift */; };
+		7FA00179282A52F200FEA268 /* UserDefaultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */; };
 		7FD4E98A2828FEB2007F8397 /* testITunesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E9892828FEB2007F8397 /* testITunesApp.swift */; };
 		7FD4E98C2828FEB2007F8397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E98B2828FEB2007F8397 /* ContentView.swift */; };
 		7FD4E98E2828FEB9007F8397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4E98D2828FEB9007F8397 /* Assets.xcassets */; };
 		7FD4E9912828FEB9007F8397 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4E9902828FEB9007F8397 /* Preview Assets.xcassets */; };
+		7FD4E9982828FEEA007F8397 /* UrlConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E9972828FEEA007F8397 /* UrlConst.swift */; };
+		7FD4E99A2828FF1A007F8397 /* ItunesDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E9992828FF1A007F8397 /* ItunesDecode.swift */; };
+		7FD4E99C2828FF3F007F8397 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E99B2828FF3F007F8397 /* Fetcher.swift */; };
+		7FD4E99E2828FF64007F8397 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F1EB3D128290EBB007798E5 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		7F1EB3D328291779007798E5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		7F1EB3D528291796007798E5 /* SideMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContentView.swift; sourceTree = "<group>"; };
+		7F1EB3D8282946A8007798E5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewModel.swift; sourceTree = "<group>"; };
 		7FD4E9862828FEB2007F8397 /* testITunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testITunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD4E9892828FEB2007F8397 /* testITunesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testITunesApp.swift; sourceTree = "<group>"; };
 		7FD4E98B2828FEB2007F8397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FD4E98D2828FEB9007F8397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD4E9902828FEB9007F8397 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FD4E9972828FEEA007F8397 /* UrlConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConst.swift; sourceTree = "<group>"; };
+		7FD4E9992828FF1A007F8397 /* ItunesDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesDecode.swift; sourceTree = "<group>"; };
+		7FD4E99B2828FF3F007F8397 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F1EB3D728291D9D007798E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4E98B2828FEB2007F8397 /* ContentView.swift */,
+				7F1EB3D128290EBB007798E5 /* BookListView.swift */,
+				7F1EB3D328291779007798E5 /* SideMenuView.swift */,
+				7F1EB3D528291796007798E5 /* SideMenuContentView.swift */,
+				7F1EB3D8282946A8007798E5 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F1EB3DA2829E756007798E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4E9972828FEEA007F8397 /* UrlConst.swift */,
+				7FD4E9992828FF1A007F8397 /* ItunesDecode.swift */,
+				7FD4E99B2828FF3F007F8397 /* Fetcher.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7FD4E97D2828FEB2007F8397 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				7FD4E9892828FEB2007F8397 /* testITunesApp.swift */,
-				7FD4E98B2828FEB2007F8397 /* ContentView.swift */,
+				7F1EB3D728291D9D007798E5 /* View */,
+				7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */,
+				7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */,
+				7F1EB3DA2829E756007798E5 /* Model */,
 				7FD4E98D2828FEB9007F8397 /* Assets.xcassets */,
 				7FD4E98F2828FEB9007F8397 /* Preview Content */,
 			);
@@ -137,8 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD4E99E2828FF64007F8397 /* BookListViewModel.swift in Sources */,
 				7FD4E98C2828FEB2007F8397 /* ContentView.swift in Sources */,
+				7F1EB3D428291779007798E5 /* SideMenuView.swift in Sources */,
+				7F1EB3D9282946A8007798E5 /* RegistrationView.swift in Sources */,
+				7FD4E99A2828FF1A007F8397 /* ItunesDecode.swift in Sources */,
+				7FA00179282A52F200FEA268 /* UserDefaultsViewModel.swift in Sources */,
 				7FD4E98A2828FEB2007F8397 /* testITunesApp.swift in Sources */,
+				7FD4E99C2828FF3F007F8397 /* Fetcher.swift in Sources */,
+				7F1EB3D628291796007798E5 /* SideMenuContentView.swift in Sources */,
+				7F1EB3D228290EBB007798E5 /* BookListView.swift in Sources */,
+				7FD4E9982828FEEA007F8397 /* UrlConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
