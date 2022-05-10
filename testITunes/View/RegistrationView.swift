@@ -46,7 +46,6 @@ struct RegistrationView: View {
                     }
                     binText = ""
                     
-                    
                 } label: {
                     Text("表示")
                 }
