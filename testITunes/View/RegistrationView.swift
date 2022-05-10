@@ -37,13 +37,15 @@ struct RegistrationView: View {
                 Spacer()
                 
                 Button {
+                    searchHistory = UserDefaults.standard.array(forKey: "key") as! [String]
                     print("binText:" + binText)
                     if binText != "" {
                         searchHistory.append(binText)
                         print(searchHistory[0])
+                        UserDefaults.standard.set(searchHistory, forKey: "key")
                     }
                     binText = ""
-                    UserDefaults.standard.set(searchHistory, forKey: "key")
+                    
                     
                 } label: {
                     Text("表示")
@@ -52,13 +54,10 @@ struct RegistrationView: View {
                 Spacer()
             }
             
-            List(0..<searchHistory.count) { i in
-                Text(self.searchHistory[i])
-                
-//                ForEach(0..<searchHistory.count) { i in
-//                    Text(self.searchHistory[i])
-//
-//                }
+            List() {
+                ForEach(searchHistory, id: \.self) { books in
+                    Text(books)
+                }
             }
             
             Spacer()
