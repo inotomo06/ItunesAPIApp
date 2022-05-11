@@ -28,7 +28,7 @@ struct RegistrationView: View {
                     self.presentation.wrappedValue.dismiss()
                     //                    UserDefaults.standard.set(searchHistory, forKey: "key")
                 } label: {
-                    Text("戻る")
+                    Text("戻るyo")
                 }
                 
                 Spacer()
