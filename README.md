@@ -3,7 +3,7 @@
 ## Description
 itunesAPIを使い、どんな本があるかを確認するためだけのアプリです。
 
-**Demo**
+**Demo**  
 <img src="https://user-images.githubusercontent.com/86100981/167614971-9c32dc85-31a2-4920-aef0-5d0897ba2226.png" width="200">
 <img src="https://user-images.githubusercontent.com/86100981/167634815-317c0441-4976-4a16-96c6-ba15026b2011.png" width="200">  
 <img src="https://user-images.githubusercontent.com/86100981/167635486-7ad7cb92-afb9-4559-9027-8b7004df60cf.png" width="200">
