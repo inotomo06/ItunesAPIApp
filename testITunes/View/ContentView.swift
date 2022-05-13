@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @ObservedObject private var bookListViewModel: BookListViewModel
-    
     // サブメニューのやつ
-    @State var isOpenSideMenu: Bool = false
+    @State var isOpenSideMenu = false
     // textfieldのやつ
     @State private var bookName = ""
     // 検索をかけたら遷移するやつ
@@ -22,14 +20,13 @@ struct ContentView: View {
         ZStack {
             NavigationView {
                 VStack {
-                    TextField("タイトルを入力してくだい", text: $bookName, onCommit: {
+                    TextField("タイトルを入力してくだい", text: $bookName, onCommit: { // 検索用のtextfield
                         print(bookName)
                         isLink.toggle()
                     })
                         .keyboardType(.webSearch)
                         .padding()
-                    // サブメニュー用
-                        .navigationBarItems(leading: (
+                        .navigationBarItems(leading: (  // サブメニュー用
                             Button {
                                 isOpenSideMenu.toggle()
                                 
