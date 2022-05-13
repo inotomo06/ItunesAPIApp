@@ -11,7 +11,6 @@
 		7F1EB3D428291779007798E5 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D328291779007798E5 /* SideMenuView.swift */; };
 		7F1EB3D628291796007798E5 /* SideMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D528291796007798E5 /* SideMenuContentView.swift */; };
 		7F1EB3D9282946A8007798E5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB3D8282946A8007798E5 /* RegistrationView.swift */; };
-		7FA00179282A52F200FEA268 /* UserDefaultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */; };
 		7FD4E98A2828FEB2007F8397 /* testITunesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E9892828FEB2007F8397 /* testITunesApp.swift */; };
 		7FD4E98C2828FEB2007F8397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E98B2828FEB2007F8397 /* ContentView.swift */; };
 		7FD4E98E2828FEB9007F8397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4E98D2828FEB9007F8397 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		7F1EB3D328291779007798E5 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		7F1EB3D528291796007798E5 /* SideMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContentView.swift; sourceTree = "<group>"; };
 		7F1EB3D8282946A8007798E5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewModel.swift; sourceTree = "<group>"; };
 		7FD4E9862828FEB2007F8397 /* testITunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testITunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD4E9892828FEB2007F8397 /* testITunesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testITunesApp.swift; sourceTree = "<group>"; };
 		7FD4E98B2828FEB2007F8397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,8 +91,7 @@
 			children = (
 				7FD4E9892828FEB2007F8397 /* testITunesApp.swift */,
 				7F1EB3D728291D9D007798E5 /* View */,
-				7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */,
-				7FA00178282A52F200FEA268 /* UserDefaultsViewModel.swift */,
+				7FDA29FA282DE05C0097400D /* ViewModel */,
 				7F1EB3DA2829E756007798E5 /* Model */,
 				7FD4E98D2828FEB9007F8397 /* Assets.xcassets */,
 				7FD4E98F2828FEB9007F8397 /* Preview Content */,
@@ -108,6 +105,14 @@
 				7FD4E9902828FEB9007F8397 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FDA29FA282DE05C0097400D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +190,6 @@
 				7F1EB3D428291779007798E5 /* SideMenuView.swift in Sources */,
 				7F1EB3D9282946A8007798E5 /* RegistrationView.swift in Sources */,
 				7FD4E99A2828FF1A007F8397 /* ItunesDecode.swift in Sources */,
-				7FA00179282A52F200FEA268 /* UserDefaultsViewModel.swift in Sources */,
 				7FD4E98A2828FEB2007F8397 /* testITunesApp.swift in Sources */,
 				7FD4E99C2828FF3F007F8397 /* Fetcher.swift in Sources */,
 				7F1EB3D628291796007798E5 /* SideMenuContentView.swift in Sources */,
