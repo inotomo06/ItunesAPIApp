@@ -35,7 +35,7 @@ struct SideMenuContentView: View {
         .padding(.leading, 32)
         .onTapGesture {
             isSheet.toggle()
-        }.fullScreenCover(isPresented: $isSheet) {
+        }.fullScreenCover(isPresented: $isSheet) { // 検索履歴のViewに遷移
             RegistrationView(binText: $bindText)
         }
     }

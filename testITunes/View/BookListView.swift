@@ -25,8 +25,7 @@ struct BookListView: View {
     var body: some View {
         
         VStack {
-            // 成功したら
-            if bookListViewModel.status == .success {
+            if bookListViewModel.status == .success { // 成功したら
                 List(bookListViewModel.iTunesSearchResult.results, id: \.self) { result in
                     VStack(alignment: .leading) {
                         Text(result.trackCensoredName)
@@ -37,7 +36,8 @@ struct BookListView: View {
                     }
                 }
                 
-            } else if bookListViewModel.status == .unexecuted {
+            } else if bookListViewModel.status == .unexecuted { // 読み込み中
+                // インゲータの表示
                 ProgressView("検索中です")
                     .foregroundColor(.blue)
                     .font(.system(size: 20))
