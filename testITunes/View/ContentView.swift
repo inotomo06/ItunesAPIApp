@@ -22,7 +22,7 @@ struct ContentView: View {
         ZStack {
             NavigationView {
                 VStack {
-                    TextField("入力してくだい", text: $bookName, onCommit: { // 検索用のtextfield
+                    TextField("タイトルを入力してくだい", text: $bookName, onCommit: { // 検索用のtextfield
                         print(bookName)
                         // 履歴用に配列にためておく
                         recordArray.append(bookName)
