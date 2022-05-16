@@ -16,35 +16,32 @@ struct RegistrationView: View {
     var body: some View {
         
         VStack {
-            HStack {
-                Spacer()
-                Button {
-                    // ひとつ前のView戻る
-                    self.presentation.wrappedValue.dismiss()
-                } label: {
-                    Text("戻る")
+            ZStack{
+                HStack{
+                    Button {
+                        // ひとつ前のView戻る
+                        self.presentation.wrappedValue.dismiss()
+                    } label: {
+                        Text("戻る")
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding(.leading)
                 Text("検索履歴")
-                    .padding()
-                Spacer()
-                
-                Button {
-                    // recordArrayに保存してある配列の情報を入れる
-                    recordArray = UserDefaults.standard.array(forKey: "key") as! [String]
-                    
-                } label: {
-                    Text("表示")
-                }
-                Spacer()
+                    .padding(.top)
             }
-            
-            List() {
-                ForEach(recordArray, id: \.self) { books in
-                    Text(books)
-                }
-            }
-            Spacer()
         }
+        
+        List() {
+            ForEach(recordArray, id: \.self) { books in
+                Text(books)
+            }
+        }
+        .refreshable{
+            // recordArrayに保存してある配列の情報を入れる
+            recordArray = UserDefaults.standard.array(forKey: "key") as! [String]
+        }
+        Spacer()
+        
     }
 }
