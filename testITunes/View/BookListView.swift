@@ -35,7 +35,6 @@ struct BookListView: View {
                         Text(result.formattedPrice)
                     }
                 }
-                
             } else if bookListViewModel.status == .unexecuted { // 読み込み中
                 // インゲータの表示
                 ProgressView("検索中です")

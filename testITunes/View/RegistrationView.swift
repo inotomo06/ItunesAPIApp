@@ -10,10 +10,8 @@ import SwiftUI
 struct RegistrationView: View {
     // ひとつ前のviewに戻るよう
     @Environment(\.presentationMode) var presentation
-    // 検索履歴用
-    @Binding var binText: String
     // 履歴をためておく配列
-    @State private var searchHistory: [String] = []
+    @State private var recordArray: [String] = []
     
     var body: some View {
         
@@ -32,20 +30,8 @@ struct RegistrationView: View {
                 Spacer()
                 
                 Button {
-                    // searchHistoryに保存してある配列の情報を入れる
-                    searchHistory = UserDefaults.standard.array(forKey: "key") as! [String]
-                    
-                    print("binText:" + binText)
-                    
-                    if binText != "" { // 検索データが空ではなかったら(同じのが複数記録されるのを防ぐ)
-                        // searchHistory配列に検索した履歴を追加
-                        searchHistory.append(binText)
-                        print(searchHistory[0])
-                        // 配列データを保存
-                        UserDefaults.standard.set(searchHistory, forKey: "key")
-                    }
-                    // 何度も追加されないように空文字に
-                    binText = ""
+                    // recordArrayに保存してある配列の情報を入れる
+                    recordArray = UserDefaults.standard.array(forKey: "key") as! [String]
                     
                 } label: {
                     Text("表示")
@@ -53,8 +39,8 @@ struct RegistrationView: View {
                 Spacer()
             }
             
-            List() { // 履歴をList形式で表示
-                ForEach(searchHistory, id: \.self) { books in
+            List() {
+                ForEach(recordArray, id: \.self) { books in
                     Text(books)
                 }
             }

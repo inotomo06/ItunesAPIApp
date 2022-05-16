@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var bookName = ""
     // 検索をかけたら遷移するやつ
     @State private var isLink = false
+    // 履歴用の配列
+    @State private var recordArray = []
     
     var body: some View {
         
@@ -22,6 +24,11 @@ struct ContentView: View {
                 VStack {
                     TextField("タイトルを入力してくだい", text: $bookName, onCommit: { // 検索用のtextfield
                         print(bookName)
+                        // 履歴用に配列にためておく
+                        recordArray.append(bookName)
+                        // 配列を保存
+                        UserDefaults.standard.set(recordArray, forKey: "key")
+                        
                         isLink.toggle()
                     })
                         .keyboardType(.webSearch)
