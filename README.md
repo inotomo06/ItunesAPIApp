@@ -7,7 +7,7 @@ itunesAPIを使い、どんな本があるかを確認するためだけのア�
 <img src="https://user-images.githubusercontent.com/86100981/167614971-9c32dc85-31a2-4920-aef0-5d0897ba2226.png" width="200">
 <img src="https://user-images.githubusercontent.com/86100981/167634815-317c0441-4976-4a16-96c6-ba15026b2011.png" width="200">  
 <img src="https://user-images.githubusercontent.com/86100981/167635486-7ad7cb92-afb9-4559-9027-8b7004df60cf.png" width="200">
-<img src="https://user-images.githubusercontent.com/86100981/167635166-17f0cf34-5cc0-4e99-9ad6-b9663d7ccd39.png" width="200">
+<img src="https://user-images.githubusercontent.com/86100981/168542323-f69b6e22-057c-48cc-9243-d2a286f0212b.png" width="200">
 
 ## Features
 1. TextFieldに本のタイトルを入れ、キーボードの検索をタップでそのタイトルの本があるかを確認できます。
