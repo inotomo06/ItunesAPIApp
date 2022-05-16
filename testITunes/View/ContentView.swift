@@ -53,6 +53,10 @@ struct ContentView: View {
             SideMenuView(isOpen: $isOpenSideMenu, bookName: $bookName)
                 .edgesIgnoringSafeArea(.all)
         }
+        .onAppear {
+            // 起動時にUserdefaultに保存して、エラーを回避
+            UserDefaults.standard.set(recordArray, forKey: "key")
+        }
     }
 }
 

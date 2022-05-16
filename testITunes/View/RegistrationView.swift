@@ -37,7 +37,7 @@ struct RegistrationView: View {
                 Text(books)
             }
         }
-        .refreshable{
+        .refreshable {
             // recordArrayに保存してある配列の情報を入れる
             recordArray = UserDefaults.standard.array(forKey: "key") as! [String]
         }
