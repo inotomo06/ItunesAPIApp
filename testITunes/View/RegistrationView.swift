@@ -16,8 +16,8 @@ struct RegistrationView: View {
     var body: some View {
         
         VStack {
-            ZStack{
-                HStack{
+            ZStack {
+                HStack {
                     Button {
                         // ひとつ前のView戻る
                         self.presentation.wrappedValue.dismiss()
@@ -42,6 +42,5 @@ struct RegistrationView: View {
             recordArray = UserDefaults.standard.array(forKey: "key") as! [String]
         }
         Spacer()
-        
     }
 }
