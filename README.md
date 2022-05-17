@@ -1,8 +1,8 @@
 # ItunesAPIApp
 
 ## Description
-itunesAPIを使い、どんな本があるかを確認するためだけのアプリです。
-
+APIを使った開発に慣れるために作ったアプリです。  
+  
 **Demo**  
 <img src="https://user-images.githubusercontent.com/86100981/167614971-9c32dc85-31a2-4920-aef0-5d0897ba2226.png" width="200">
 <img src="https://user-images.githubusercontent.com/86100981/167634815-317c0441-4976-4a16-96c6-ba15026b2011.png" width="200">  
