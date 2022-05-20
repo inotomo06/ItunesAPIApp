@@ -13,8 +13,6 @@ struct SideMenuContentView: View {
     @Binding var bindText: String
     @Binding var isOpen: Bool
     
-    let bookName = ""
-    
     @State private var isSheet = false
     
     init(topPadding: CGFloat = 30, text: String, bindText: Binding<String>, isOpen: Binding<Bool>) {
