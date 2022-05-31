@@ -50,7 +50,7 @@ class BookListViewModel: ObservableObject {
         for child in mirror.children {
             if let label = child.label,
                let value = child.value as? String {
-                queryItems.append(URLQueryItem(name: label , value: value))
+                queryItems.append(.init(name: label, value: value))
             } else {
                 continue
             }

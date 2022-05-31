@@ -45,7 +45,7 @@ struct BookListView: View {
             }
         }
         .onAppear {
-            try! bookListViewModel.settings(title: bookName)
+            try? bookListViewModel.settings(title: bookName)
         }
     }
 }

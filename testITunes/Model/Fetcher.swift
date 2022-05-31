@@ -17,7 +17,7 @@ class Fetcher {
 
     static func fetch(from url: URL, session: URLSession? = nil) async -> Result<Data, Error> {
 
-        // リクエストを作成してfetch(from:session:handler:)に投げる
+        // リクエストを作成してfetch()にやってもらう
         let request = URLRequest(url: url)
         return await self.fetch(from: request, session: session)
     }
@@ -26,7 +26,7 @@ class Fetcher {
         let session = (session == nil) ? URLSession(configuration: .default) : session!
 
         do {
-            // awaitを使う 非同期（別スレッド）で実行中
+            // awaitを使う 非同期で実行中
             let (data, response) = try await session.data(for: request)
 
             guard let response = response as? HTTPURLResponse else {

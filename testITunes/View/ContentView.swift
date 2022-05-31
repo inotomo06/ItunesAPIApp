@@ -31,16 +31,19 @@ struct ContentView: View {
                         
                         isLink.toggle()
                     })
-                        .keyboardType(.webSearch)
-                        .padding()
-                        .navigationBarItems(leading: (  // サブメニュー用
-                            Button {
-                                isOpenSideMenu.toggle()
-                                
-                            } label: {
-                                Image(systemName: "line.horizontal.3")
-                                    .imageScale(.large)
-                            }))
+                    .padding(15)
+                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 1)) // 角丸矩形
+                    .frame(minWidth: 140, minHeight: 180)
+                    .padding()
+                    .keyboardType(.webSearch)
+                    .navigationBarItems(leading: (  // サブメニュー用
+                        Button {
+                            isOpenSideMenu.toggle()
+                            
+                        } label: {
+                            Image(systemName: "line.horizontal.3")
+                                .imageScale(.large)
+                        }))
                     // 検索結果のファイルに遷移
                     NavigationLink(destination: BookListView(bookName: $bookName), isActive: $isLink) {
                         EmptyView()
