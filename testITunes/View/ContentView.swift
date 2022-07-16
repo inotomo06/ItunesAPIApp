@@ -31,11 +31,12 @@ struct ContentView: View {
                         
                         isLink.toggle()
                     })
-                    .padding(15)
-                    .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 1)) // 角丸矩形
-                    .frame(minWidth: 140, minHeight: 180)
+                    .padding()
+                    .background(Color(.systemGray4))
+                    .cornerRadius(17)
                     .padding()
                     .keyboardType(.webSearch)
+
                     .navigationBarItems(leading: (  // サブメニュー用
                         Button {
                             isOpenSideMenu.toggle()
@@ -53,7 +54,7 @@ struct ContentView: View {
                     Spacer()
                 }
             }
-            SideMenuView(isOpen: $isOpenSideMenu, bookName: $bookName)
+            SideMenuView(isOpen: $isOpenSideMenu)
                 .edgesIgnoringSafeArea(.all)
         }
         .onAppear {

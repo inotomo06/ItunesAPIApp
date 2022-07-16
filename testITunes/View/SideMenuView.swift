@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SideMenuView: View {
     @Binding var isOpen: Bool
-    @Binding var bookName: String
+//    @Binding var bookName: String
     let width: CGFloat = 270
     
     var body: some View {
@@ -27,7 +27,7 @@ struct SideMenuView: View {
             
             HStack {
                 VStack() {
-                    SideMenuContentView(topPadding: 100, text: "検索履歴", bindText: $bookName, isOpen: $isOpen)
+                    SideMenuContentView(topPadding: 100, text: "検索履歴", isOpen: $isOpen)
                     Spacer()
                 }
                 .frame(width: width)

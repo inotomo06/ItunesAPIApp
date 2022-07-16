@@ -27,12 +27,24 @@ struct BookListView: View {
         VStack {
             if bookListViewModel.status == .success { // 成功したら
                 List(bookListViewModel.iTunesSearchResult.results, id: \.self) { result in
-                    VStack(alignment: .leading) {
-                        Text(result.trackCensoredName)
-                            .padding(.bottom)
-                            .font(.headline)
-                        Text(result.artistName)
-                        Text(result.formattedPrice)
+                    Button {
+                        for item in bookListViewModel.iTunesSearchResult.results {
+                            // 選んだ本の名前とループで回してる本が同じだったら
+                            if result.trackCensoredName == item.trackCensoredName {
+                                bookListViewModel.iTunesUrl = item.trackViewUrl
+                                print(bookListViewModel.iTunesUrl)
+                            }
+                        }
+                        
+                        bookListViewModel.isShowSafari.toggle()
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Text(result.trackCensoredName)
+                                .padding(.bottom)
+                                .font(.headline)
+                            Text(result.artistName)
+                            Text(result.formattedPrice)
+                        }
                     }
                 }
             } else if bookListViewModel.status == .unexecuted { // 読み込み中
@@ -46,6 +58,9 @@ struct BookListView: View {
         }
         .onAppear {
             try? bookListViewModel.settings(title: bookName)
+        }
+        .sheet(isPresented: $bookListViewModel.isShowSafari) {
+            SafariView(url: URL(string: bookListViewModel.iTunesUrl)!)
         }
     }
 }

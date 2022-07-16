@@ -24,6 +24,9 @@ class BookListViewModel: ObservableObject {
     // インジケータ
     @Published var loading = true
     
+    @Published var iTunesUrl = ""
+    @Published var isShowSafari = false
+    
     init() throws {
         // 初期化
         iTunesSearchResult = nil
@@ -83,5 +86,9 @@ class BookListViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func urlString(url: String) {
+        iTunesUrl = url
     }
 }

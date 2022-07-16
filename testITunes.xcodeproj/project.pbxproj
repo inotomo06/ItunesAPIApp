@@ -19,6 +19,7 @@
 		7FD4E99A2828FF1A007F8397 /* ItunesDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E9992828FF1A007F8397 /* ItunesDecode.swift */; };
 		7FD4E99C2828FF3F007F8397 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E99B2828FF3F007F8397 /* Fetcher.swift */; };
 		7FD4E99E2828FF64007F8397 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */; };
+		7FFA4719287C64B500F2C8DE /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA4718287C64B500F2C8DE /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7FD4E9992828FF1A007F8397 /* ItunesDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesDecode.swift; sourceTree = "<group>"; };
 		7FD4E99B2828FF3F007F8397 /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		7FD4E99D2828FF64007F8397 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
+		7FFA4718287C64B500F2C8DE /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7FD4E98B2828FEB2007F8397 /* ContentView.swift */,
 				7F1EB3D128290EBB007798E5 /* BookListView.swift */,
+				7FFA4718287C64B500F2C8DE /* SafariView.swift */,
 				7F1EB3D328291779007798E5 /* SideMenuView.swift */,
 				7F1EB3D528291796007798E5 /* SideMenuContentView.swift */,
 				7F1EB3D8282946A8007798E5 /* RegistrationView.swift */,
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD4E99E2828FF64007F8397 /* BookListViewModel.swift in Sources */,
+				7FFA4719287C64B500F2C8DE /* SafariView.swift in Sources */,
 				7FD4E98C2828FEB2007F8397 /* ContentView.swift in Sources */,
 				7F1EB3D428291779007798E5 /* SideMenuView.swift in Sources */,
 				7F1EB3D9282946A8007798E5 /* RegistrationView.swift in Sources */,

@@ -28,5 +28,6 @@ struct ITunesSearchResult: Decodable {
         let formattedPrice: String
         let releaseDate: String
         let artistName: String
+        let trackViewUrl: String
     }
 }
