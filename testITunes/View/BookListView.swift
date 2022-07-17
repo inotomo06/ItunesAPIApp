@@ -45,6 +45,7 @@ struct BookListView: View {
                             Text(result.artistName)
                             Text(result.formattedPrice)
                         }
+                        .foregroundColor(.black)
                     }
                 }
             } else if bookListViewModel.status == .unexecuted { // 読み込み中
