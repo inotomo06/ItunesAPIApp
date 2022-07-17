@@ -4,12 +4,13 @@
 APIを使った開発に慣れるために作ったアプリです。  
   
 **Demo**  
-<img src="https://user-images.githubusercontent.com/86100981/171092156-d6b356ba-1c82-45ac-9a37-23e65d50aa28.png" width="200">
+<img src="https://user-images.githubusercontent.com/86100981/179398907-b7775abe-d9c1-4619-88db-21b757f92b0d.png" width="200">
 <img src="https://user-images.githubusercontent.com/86100981/167634815-317c0441-4976-4a16-96c6-ba15026b2011.png" width="200">  
 <img src="https://user-images.githubusercontent.com/86100981/167635486-7ad7cb92-afb9-4559-9027-8b7004df60cf.png" width="200">
 <img src="https://user-images.githubusercontent.com/86100981/168542323-f69b6e22-057c-48cc-9243-d2a286f0212b.png" width="200">
 
 ## Features
+
 1. TextFieldに本のタイトルを入れ、キーボードの検索をタップでそのタイトルの本があるかを確認できます。
 2. 画像１枚目の三本線のマークをタップで、画像3枚目のサイドメニューが開きます。
 3. サイドメニューの検索履歴をタップすると、今まで検索したタイトルが見れます。
